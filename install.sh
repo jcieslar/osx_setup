@@ -91,13 +91,12 @@ brew_install node
 brew_install heroku
 brew_install bash-completion
 brew_install elixir
-brew_install pow
+# brew_install pow
 brew_install phantomjs
 
 # Media
 
 cask_install google-chrome
-# cask_install hipchat
 cask_install spotify
 cask_install skype
 cask_install dropbox
@@ -107,32 +106,26 @@ cask_install atom
 cask_install vlc
 cask_install sublime-text3
 cask_install iterm2
-cask_install todoist
-cask_install mailbox
-cask_install bettertouchtool
+# cask_install todoist
+# cask_install mailbox
+# cask_install bettertouchtool
 cask_install libreoffice
 cask_install totalterminal
 cask_install gimp
 cask_install transmission
 # cask_install spectacle
-cask_install dash
+# cask_install dash
 cask_install toggldesktop
 cask_install slack
 cask_install java
 cask_install opera
 cask_install torbrowser # browser
-# cask_install omnigraffle #charts diagrams
 cask_install steam
 cask_install pgadmin3
 cask_install skitch
 cask_install calibre
 cask_install postico
 
-# osx audio recording
-# cask_install soundflower https://code.google.com/archive/p/soundflower/downloads
-# cask_install linein
-# http://img.movavi.com/online-help/screencapturemac/1/recording_system_sounds_with_soundflower.htm
-# ^ + linein
 
 # Optional/alternative
 cask_install alfred
