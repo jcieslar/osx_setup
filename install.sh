@@ -93,6 +93,7 @@ brew_install bash-completion
 brew_install elixir
 # brew_install pow
 brew_install phantomjs
+brew_install awscli
 
 # Media
 
@@ -125,6 +126,7 @@ cask_install pgadmin3
 cask_install skitch
 cask_install calibre
 cask_install postico
+cask_install zeplin
 
 
 # Optional/alternative
