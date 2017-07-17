@@ -94,6 +94,7 @@ brew_install elixir
 # brew_install pow
 brew_install phantomjs
 brew_install awscli
+brew_install yarn
 
 # Media
 
@@ -127,6 +128,8 @@ cask_install skitch
 cask_install calibre
 cask_install postico
 cask_install zeplin
+cask_install caffeine
+cask_install flux
 
 
 # Optional/alternative
@@ -139,10 +142,8 @@ cask_install alfred
 # autostart_hidden BetterTouchTool Monosnap
 
 # You need to install manualy:
-# f.lux
 # sunrise
 # quickcast
 # monosnap
-# caffeine
 # http://qnapi.github.io/
 # discord
