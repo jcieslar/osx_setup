@@ -130,6 +130,7 @@ cask_install postico
 cask_install zeplin
 cask_install caffeine
 cask_install flux
+cask_install airdroid
 
 
 # Optional/alternative
