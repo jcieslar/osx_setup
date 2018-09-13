@@ -57,14 +57,15 @@ if ! type rbenv; then
   source ~/.bash_profile
 
   # Install Ruby # El Capitan hack
-  brew install https://raw.githubusercontent.com/Homebrew/homebrew/b5cffc8d5fc41540a41ed4deba23afbb6431435e/Library/Formula/openssl.rb
-  brew tap homebrew/versions
-  brew switch openssl 1.0.1l
-  brew link openssl --force
+  # brew install https://raw.githubusercontent.com/Homebrew/homebrew/b5cffc8d5fc41540a41ed4deba23afbb6431435e/Library/Formula/openssl.rb
+  # brew tap homebrew/versions
+  # brew switch openssl 1.0.1l
+  # brew link openssl --force
 
   # brew install llvm35 openssl
-  RUBY_CONFIGURE_OPTS="--with-lib-dir=$(brew --prefix openssl)/lib --with-include-dir=$(brew --prefix openssl)/include" rbenv install 2.2.2
-  rbenv global 2.2.2
+  # RUBY_CONFIGURE_OPTS="--with-lib-dir=$(brew --prefix openssl)/lib --with-include-dir=$(brew --prefix openssl)/include" rbenv install 2.2.2
+  rbenv install 2.5.1
+  rbenv global 2.5.1
   ruby -v
   gem install bundler
 else
@@ -78,12 +79,11 @@ autostart_hidden() {
   done
 }
 
-brew_install_with_agents postgresql
+# brew_install_with_agents postgresql
 brew_install_with_agents mysql
 brew_install_with_agents redis
 brew_install_with_agents mongodb
 
-brew_install caskroom/cask/brew-cask
 brew_install qt
 brew_install memcached
 brew_install imagemagick
@@ -91,7 +91,6 @@ brew_install node
 brew_install heroku
 brew_install bash-completion
 brew_install elixir
-# brew_install pow
 brew_install phantomjs
 brew_install awscli
 brew_install yarn
@@ -108,16 +107,9 @@ cask_install atom
 cask_install vlc
 cask_install sublime-text3
 cask_install iterm2
-# cask_install todoist
-# cask_install mailbox
-# cask_install bettertouchtool
 cask_install libreoffice
-cask_install totalterminal
 cask_install gimp
 cask_install transmission
-# cask_install spectacle
-# cask_install dash
-cask_install toggldesktop
 cask_install slack
 cask_install java
 cask_install opera
@@ -129,12 +121,14 @@ cask_install calibre
 cask_install postico
 cask_install zeplin
 cask_install caffeine
-cask_install flux
-cask_install airdroid
-
+cask_install qnapi
 
 # Optional/alternative
-cask_install alfred
+# cask_install alfred
+# cask_install bettertouchtool
+# cask_install flux
+# cask_install spectacle
+# cask_install dash
 
 # Settings
 # defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
@@ -146,5 +140,6 @@ cask_install alfred
 # sunrise
 # quickcast
 # monosnap
-# http://qnapi.github.io/
 # discord
+# bitbar
+# postgresapp
