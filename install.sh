@@ -49,6 +49,7 @@ brew_install_with_agents() {
 }
 
 if ! type rbenv; then
+  brew_install readline
   brew_install rbenv
   brew_install ruby-build
 
