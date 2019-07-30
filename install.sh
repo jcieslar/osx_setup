@@ -123,6 +123,7 @@ cask_install postico
 cask_install zeplin
 cask_install caffeine
 cask_install qnapi
+cask_install spectacle
 
 # Optional/alternative
 # cask_install alfred
@@ -144,3 +145,7 @@ cask_install qnapi
 # discord
 # bitbar
 # postgresapp
+# https://www.plugformac.com/
+# helium
+# https://macpaw.com/encrypto
+# https://nightowl.kramser.xyz/
