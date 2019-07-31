@@ -38,10 +38,7 @@ brew_install_with_agents() {
     echo "installing: $1..."
     brew install $1
     echo 'agents installing...'
-    # To have launchd start redis at login:
-    ln -sfv /usr/local/opt/$1/*.plist ~/Library/LaunchAgents
-    # Then to load redis now:
-    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.$1.plist
+    brew services start $1
     echo 'finished'
   else
     echo "$1 is installed"
@@ -65,20 +62,13 @@ if ! type rbenv; then
 
   # brew install llvm35 openssl
   # RUBY_CONFIGURE_OPTS="--with-lib-dir=$(brew --prefix openssl)/lib --with-include-dir=$(brew --prefix openssl)/include" rbenv install 2.2.2
-  rbenv install 2.5.1
-  rbenv global 2.5.1
+  rbenv install 2.6.3
+  rbenv global 2.6.3
   ruby -v
   gem install bundler
 else
   echo 'rbenv and ruby installed'
 fi
-
-autostart_hidden() {
-  for app; do
-    echo "Autostart: $app"
-    osascript -e "tell application \"System Events\" to make login item at end with properties {path:\"/Applications/$app.app\", hidden:true}" > /dev/null
-  done
-}
 
 # brew_install_with_agents postgresql
 brew_install_with_agents mysql
@@ -106,7 +96,7 @@ cask_install firefox
 cask_install slack
 cask_install atom
 cask_install vlc
-cask_install sublime-text3
+# cask_install sublime-text3
 cask_install iterm2
 cask_install libreoffice
 cask_install gimp
@@ -114,16 +104,16 @@ cask_install transmission
 cask_install slack
 cask_install java
 cask_install opera
-cask_install torbrowser # browser
-cask_install steam
-cask_install pgadmin3
-cask_install skitch
+# cask_install torbrowser # browser
+# cask_install steam
+# cask_install pgadmin4
+# cask_install skitch
 cask_install calibre
 cask_install postico
-cask_install zeplin
+# cask_install zeplin
 cask_install caffeine
 cask_install qnapi
-cask_install spectacle
+# cask_install spectacle
 
 # Optional/alternative
 # cask_install alfred
