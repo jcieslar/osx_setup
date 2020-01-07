@@ -85,6 +85,8 @@ brew_install elixir
 brew_install phantomjs
 brew_install awscli
 brew_install yarn
+brew_install youtube-dl
+brew_install ffmpeg
 
 # Media
 
